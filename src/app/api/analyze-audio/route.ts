@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     const base64Audio = Buffer.from(arrayBuffer).toString('base64');
     const mimeType = audioFile.type || 'audio/webm';
 
-    const prompt = `You are an expert English language evaluator for children aged 9-14. 
+    const prompt = `You are an expert English language evaluator for children aged 5-14. 
 Analyze this audio recording of a child speaking English${conversationContext ? ` in the context of: "${conversationContext}"` : ''}.
 ${transcript ? `Transcript/Context: "${transcript}"` : ''}
 

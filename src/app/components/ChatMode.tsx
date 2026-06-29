@@ -46,7 +46,7 @@ export default function ChatMode() {
     // Pre-populate the transcript with a greeting so the AI's response makes sense in the UI
     setTurns([{ role: 'user', text: 'Hello!', timestamp: Date.now() }]);
     
-    const systemPrompt = `You are a friendly, encouraging English tutor for children aged 9-14. 
+    const systemPrompt = `You are a friendly, encouraging English tutor for children aged 5-14. 
 Your conversation topic is: "${topic.prompt}".
 Rules:
 - Ask ONE clear, open-ended question at a time. Wait for the child to respond.

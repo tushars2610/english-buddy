@@ -75,7 +75,7 @@ export default function Home() {
           }}
         >
           Practise speaking English and get instant feedback with our friendly AI tutor!
-          Perfect for ages <strong style={{ color: 'rgba(255,255,255,0.7)' }}>9–14</strong> 🚀
+          Perfect for ages <strong style={{ color: 'rgba(255,255,255,0.7)' }}>5–14</strong> 🚀
         </p>
       </div>
 
@@ -167,23 +167,23 @@ export default function Home() {
         }}
       >
         {[
-          { icon: '🔒', text: 'Safe for Kids' },
-          { icon: '🤖', text: 'Powered by Gemini AI' },
-          { icon: '⚡', text: 'Instant Feedback' },
-          { icon: '📊', text: 'Detailed Analytics' },
+          { id: 'safe', icon: '🔒', text: 'Safe for Kids' },
+          { id: 'ai', icon: '🤖', text: <>Powered by <a href="https://pravakta.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-2">Pravakta AI</a></> },
+          { id: 'fast', icon: '⚡', text: 'Instant Feedback' },
+          { id: 'stats', icon: '📊', text: 'Detailed Analytics' },
         ].map((b) => (
           <div
-            key={b.text}
+            key={b.id}
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: 6,
-              padding: '6px 14px',
+              gap: 8,
+              padding: '8px 16px',
               borderRadius: 50,
-              background: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(255,255,255,0.06)',
-              fontSize: 12,
-              color: 'rgba(255,255,255,0.35)',
+              background: 'rgba(255,255,255,0.1)',
+              border: '1px solid rgba(255,255,255,0.2)',
+              fontSize: 13,
+              color: 'rgba(255,255,255,0.8)',
               fontWeight: 600,
             }}
           >
