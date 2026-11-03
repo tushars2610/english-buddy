@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 require('dotenv').config({ path: '.env.local' });
 
-const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+const apiKey = process.env.GEMINI_API_KEY;
 const model = 'models/gemini-2.5-flash-native-audio-latest';
 const wsUrl = `wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent?key=${apiKey}`;
 

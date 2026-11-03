@@ -36,7 +36,7 @@ export default function ChatMode() {
   }, []);
 
   const { voiceState, isConnected, connect, disconnect, getRecordedAudioBlob } = useGeminiLive({
-    apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY || '',
+    apiKey: process.env.GEMINI_API_KEY || '',
     onTranscript: handleTranscript,
   });
 

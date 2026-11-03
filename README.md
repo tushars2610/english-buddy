@@ -48,12 +48,12 @@ cp .env.local.example .env.local
 Edit `.env.local`:
 ```
 GEMINI_API_KEY=your_key_here
-NEXT_PUBLIC_GEMINI_API_KEY=your_key_here
+GEMINI_API_KEY=your_key_here
 ```
 
 Get a free API key at: https://aistudio.google.com/app/apikey
 
-> **Note:** Both keys can be the same value. `GEMINI_API_KEY` is used server-side for analysis; `NEXT_PUBLIC_GEMINI_API_KEY` is used client-side for the live voice WebSocket.
+> **Note:** Both keys can be the same value. `GEMINI_API_KEY` is used server-side for analysis; `GEMINI_API_KEY` is used client-side for the live voice WebSocket.
 
 ### 3. Run
 ```bash
